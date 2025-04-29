@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Submission Summary</title>
+</head>
+<body>
+<h1>Submission Complete!</h1>
+<h2>Here's all your information:</h2>
+
+<p>First Name: <span th:text="${formData.firstName}"></span></p>
+<p>Last Name: <span th:text="${formData.lastName}"></span></p>
+<br/>
+
+<p>Email: <span th:text="${formData.email}"></span></p>
+<p>Phone: <span th:text="${formData.phone}"></span></p>
+<br/>
+
+<p>City: <span th:text="${formData.city}"></span></p>
+<p>Country: <span th:text="${formData.country}"></span></p>
+<br/>
+
+<a href="/">Start New Form</a>
+</body>
+</html>

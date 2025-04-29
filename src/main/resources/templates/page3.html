@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Location Information</title>
+</head>
+<body>
+<h1>Step 3: Location Information</h1>
+
+
+<p>First Name: <span th:text="${firstName}"></span></p>
+<p>Last Name: <span th:text="${lastName}"></span></p>
+
+
+<p>Email: <span th:text="${email}"></span></p>
+<p>Phone: <span th:text="${phone}"></span></p>
+<br/>
+
+<form action="/processPage3" method="post">
+  <label for="city">City:</label><br/>
+  <input type="text" id="city" name="city" required><br/><br/>
+
+  <label for="country">Country:</label><br/>
+  <input type="text" id="country" name="country" required><br/><br/>
+
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>

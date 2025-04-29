@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Information</title>
+</head>
+<body>
+<h1>Step 1: Personal Information</h1>
+<form action="/processPage1" method="post">
+  <label for="firstName">First Name:</label><br/>
+  <input type="text" id="firstName" name="firstName" required><br/><br/>
+
+  <label for="lastName">Last Name:</label><br/>
+  <input type="text" id="lastName" name="lastName" required><br/><br/>
+
+  <button type="submit">Next →</button>
+</form>
+</body>
+</html>
